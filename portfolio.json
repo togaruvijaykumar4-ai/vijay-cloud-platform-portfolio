@@ -1,0 +1,15 @@
+{
+  "owner": "Vijay Kumar Togaru",
+  "github": "https://github.com/togaruvijaykumar4-ai",
+  "projects": [
+    "01-aws-3tier-terraform",
+    "02-multicloud-eks-gke",
+    "03-kubernetes-gitops",
+    "04-observability",
+    "05-aws-security-remediation",
+    "06-kinesis-streaming",
+    "07-aws-gcp-reference",
+    "08-serverless-bedrock",
+    "09-disaster-recovery"
+  ]
+}

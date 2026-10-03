@@ -1,0 +1,22 @@
+name: cloud-demo-ci
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: app
+    steps:
+      - uses: actions/checkout@v4
+      - name: Python syntax check
+        run: python -m py_compile app.py
+      - name: Build container
+        run: docker build -t cloud-demo:${{ github.sha }} .
